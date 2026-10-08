@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0a0908">
+<title>100 — Interactive 3D · Scroll · Cinematic</title>
+<meta name="description" content="100 live interactive experiments: 3D, scroll-driven, cinematic.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div id="cursor" aria-hidden="true"></div>
+<div id="loader" role="status" aria-label="loading"><div class="ld-frame"><i id="loadfill"></i></div><div class="ld-n" id="loadtxt">0 / 100</div></div>
+
+<header id="hud"><span class="logo">100<span>/EXP</span></span>
+<span class="live"><i></i>LIVE — <b id="liveCount">0</b> RUNNING</span></header>
+
+<main>
+<section id="hero">
+  <p class="kick">3D · SCROLL · CINEMATIC — ALL LIVE</p>
+  <h1>ONE<br>HUNDRED<br><em>Experiments.</em></h1>
+  <p class="sub">No videos. No mockups. Every cell below is rendered live in your browser right now.</p>
+  <div class="tools">
+    <div class="filters" id="filters">
+      <button data-f="all" class="on">ALL 100</button><button data-f="3d">3D</button><button data-f="scroll">SCROLL</button><button data-f="cine">CINEMATIC</button><button data-f="trans">TRANSITIONS</button>
+    </div>
+    <input id="search" type="search" placeholder="search experiments…" aria-label="search">
+  </div>
+  <p class="count"><b id="showCount">300</b> / 300 SHOWN — CLICK ANYTHING TO RE-SEED IT</p>
+</section>
+<section id="wall"><div class="grid" id="grid"></div></section>
+<section class="divider"><p class="kick">THEN CAME THE FULL STORIES</p>
+<h2>Two hundred<br><em>full-screen</em> worlds.</h2>
+<p class="sub">No boxes. Each one fills your screen. Scroll drives every single one.</p></section>
+<section id="journey"><div id="fullList"></div></section>
+<footer><div class="wrap">100 EXPERIMENTS · RENDERED LIVE · <a href="#hero">BACK TO TOP ↑</a></div></footer>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
